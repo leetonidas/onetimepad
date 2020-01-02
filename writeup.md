@@ -1,6 +1,7 @@
 # onetimepad
 
 This challenge fits into the category of babyheap challenges which are small heap puzzles with arbitrary limitations. Here a small pad was implemented with could hold eight notes at a time but after reading a note it was destroyed. The vulnerability was a classical use after free (UAF) in `rewrite` that did not check wether a note was valid or not. This bug however could only be triggered once.
+
 |type|info|
 -:|:-
 target | `88.198.154.140 31336`
